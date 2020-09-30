@@ -1,0 +1,45 @@
+
+#wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+#container{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: x-large;
+
+   
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+ul li {
+    margin:0px  20px;
+    list-style: none;
+}
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+  table td {
+    width: 60px;
+    height:60px;
+  }
+  .t-cell{
+     text-align: center;
+     font-family: Helvetica, Sans-Serif;
+     font-size: 30px;
+  }

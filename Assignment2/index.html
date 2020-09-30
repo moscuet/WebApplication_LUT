@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css">
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="container">
+        <nav>
+          <ul>
+              <li class="navlink"><a href="../Assignment-1/index.html" >Assignment-1</a></li>
+              <li class="navlink"><a href="../Assignment2//index.html" style="color:red">Assignment-2</a></li>
+              <li class="navlink"><a href="#">Assignment-3</a></li>
+              <li class="navlink"><a href="#">Assignment-4</a></li>
+          </ul>
+      </nav>
+    
+        <div>
+          <input
+            id="rowColmNumber"
+            type="number"
+            placeholder="Number of rows / colms"
+          />
+          <button id="play">Play</button>
+          <p id="inputDisplay"></p>
+        </div>
+        <div>
+          <button id="player1">Player1</button>
+          <button id="player2">Player2</button>
+        </div>
+        <div style="height:24px;width:25%; background:silver;">
+          <div id = 'myBar' style="height:24px;width:0; background:red;">Progress</div>
+        </div>
+        <div id="board"></div>
+        <div id="result">result</div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
