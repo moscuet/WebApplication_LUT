@@ -76,7 +76,6 @@ let interval
 let progressInterval
   let width = 0;
   function frame() {
-    console.log('width',width)
     if (width === 100) {
       width=1
         } else {
@@ -85,7 +84,6 @@ let progressInterval
     }
   }
   function timer(){
-    console.log('active',activePlayer)
     activePlayer = activePlayer === "player1" ? "player2" : "player1";
     let inactivePlayer = activePlayer === "player1" ? "player2" : "player1";
     document.getElementById(activePlayer).setAttribute("style", "background-color: green;");
@@ -94,6 +92,7 @@ let progressInterval
 function updateScore() {
   if(interval) clearInterval(interval)
   if(progressInterval) clearInterval(progressInterval)
+   width=0
    progressInterval = setInterval(frame, 50);
    interval = setInterval( timer,5000)
   if (checkRowColm("colm")) return true;

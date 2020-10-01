@@ -41,7 +41,7 @@ function checkRowColm(p) {
     if (win) return win;
   }
   if (!isempty) {
-    alert("draw");
+    alert("Game draw");
     reSet();
     return;
   }
@@ -94,6 +94,7 @@ let progressInterval
 function updateScore() {
   if(interval) clearInterval(interval)
   if(progressInterval) clearInterval(progressInterval)
+   width=0
    progressInterval = setInterval(frame, 50);
    interval = setInterval( timer,5000)
   if (checkRowColm("colm")) return true;
